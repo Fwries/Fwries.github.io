@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> A2_Faries.Index </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/mystyles.css"/>
+	<script src="js/myscript.js"></script> 
+</head>
+<body>
+	<div class="grid-container-Index">
+		<!-- Carousel Img Scroll -->
+		<div class="ItemCarousel"> 
+			<div class="Slide fade"> 
+				<div class="SlideImg"><a href="index.html"><img class="animated-gif" src="img/CrowBanner.gif" alt="CrowBanner"> </div>
+			</div>
+			
+			<div class="Slide fade"> 
+				<div class="SlideImg"><a href="foraging.html"><img class="animated-gif" src="img/CrowBanner.gif" alt="CrowBanner"> </div>
+			</div>
+			
+			<div class="Slide fade"> 
+				<div class="SlideImg"><a href="others.html"><img class="animated-gif" src="img/CrowBanner.gif" alt="CrowBanner"> </div>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		
+		<div class="Header"> <h1> Others! </h1> </div>
+		
+		<div class="ItemPic"><img src="img/CrowImg1.png"</div>
+		
+		<div class="ItemMain">
+			<p> Corvus is a widely distributed genus of medium-sized to large birds in the family Corvidae. 
+				It includes species commonly known as crows, ravens and rooks.
+			</p>
+		</div>
+	</div>
+</body>
+</html>

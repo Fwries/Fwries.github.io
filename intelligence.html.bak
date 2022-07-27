@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> A2_Faries.Index </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/mystyles.css"/>
+	<script src="js/myscript.js"></script> 
+</head>
+<body>
+	<div class="grid-container-Index">
+		<!-- Carousel Img Scroll -->
+		<div class="ItemCarousel"> 
+			<div class="Slide fade"> 
+				<div class="SlideImg"><a href="index.html"><img class="animated-gif" src="img/CrowBanner.gif" alt="CrowBanner"> </div>
+			</div>
+			
+			<div class="Slide fade"> 
+				<div class="SlideImg"><a href="foraging.html"><img class="animated-gif" src="img/CrowBanner.gif" alt="CrowBanner"> </div>
+			</div>
+			
+			<div class="Slide fade"> 
+				<div class="SlideImg"><a href="others.html"><img class="animated-gif" src="img/CrowBanner.gif" alt="CrowBanner"> </div>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		
+		<div class="Header"> <h1> Intelligence </h1> </div>
+		
+		<div class="ItemPic"><img src="img/CrowImg1.png"</div>
+		
+		<div class="ItemMain">
+			<p> As a group, crows show remarkable examples of intelligence. Natural history books from the 18th century recount an 
+				often-repeated, but unproven anecdote of "counting crows" — specifically a crow whose ability to count to five (or four 
+				in some versions) is established through a logic trap set by a farmer. Crows and ravens often score very highly on 
+				intelligence tests. Certain species top the avian IQ scale. Wild hooded crows in Israel have learned to use bread crumbs 
+				for bait-fishing. Crows engage in a kind of mid-air jousting, or air-"chicken" to establish pecking order. They have been 
+				found to engage in activities such as sports, tool use, the ability to hide and store food across seasons, episodic-like 
+				memory, and the ability to use individual experience in predicting the behavior of proximal conspecifics. 
+			</p>
+				
+			<p> One species, the New Caledonian crow, has also been intensively studied recently because of its ability to manufacture 
+				and use tools in the day-to-day search for food. On 5 October 2007, researchers from the University of Oxford presented 
+				data acquired by mounting tiny video cameras on the tails of New Caledonian crows. They pluck, smooth, and bend twigs 
+				and grass stems to procure a variety of foodstuffs. Crows in Queensland have learned how to eat the toxic cane toad by 
+				flipping the cane toad on its back and violently stabbing the throat where the skin is thinner, allowing the crow to 
+				access the nontoxic innards; their long beaks ensure that all of the innards can be removed. The western jackdaw and 
+				the Eurasian magpie have been found to have a nidopallium about the same relative size as the functionally equivalent 
+				neocortex in chimpanzees and humans, and significantly larger than is found in the gibbons. Crows have demonstrated 
+				the ability to distinguish individual humans by recognizing facial features. Evidence also suggests they are one of 
+				the few nonhuman animals, along with insects like bees or ants, capable of displacement (communication about things 
+				that are not immediately present, spatially or temporally). <br> 
+				
+				In Japan, crows have demonstrated the ability to learn how to use public drinking fountains for both water and 
+				bathing purposes. In the Gumyoji Park of Yokohama crows have shown the ability to both activate public drinking 
+				fountains and adjust the water flow to appropriate levels for either bathing or drinking. In the past there have 
+				been plenty of studies conducted on how ravens and corvids in general learn. Some of these studies have concluded 
+				that the brains of ravens and crows compare in relative size to great apes. The encephalization quotient (EQ), 
+				helps to expose the similarities between a great ape brain and a crow/raven brain. This includes cognitive ability.
+				Even though the brain differs significantly between mammals and birds we can see larger forebrains in corvids than 
+				other birds (except some parrots), especially in areas associated with social learning, planning, decision making 
+				in humans and complex cognition in apes. Along with tool use, ravens can recognize themselves in a mirror. This 
+				complex cognition can also be extended to socio-cognitive abilities. Studies have been conducted regarding the 
+				development and evolution of social abilities in ravens. These results help to show how ravens prefer to form 
+				stable relationships with siblings and close social partners as opposed to strangers. The development in social 
+				abilities is essential for raven survival, including identifying whether something poses a threat and how ravens 
+				alert others nearby of an incoming threat. 
+			
+			</p>
+		</div>
+	</div>
+</body>
+</html>
