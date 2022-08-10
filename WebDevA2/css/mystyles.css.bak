@@ -198,9 +198,9 @@ body { /* style for all */
 
 .ItemPic2 { 
 	width: 100%;
+	background: #111;
 	grid-area: pic2;
 	.pic{ width: 100%; }
-	background: #111;
 }
 
 .grid-container-Index {
@@ -211,3 +211,4 @@ body { /* style for all */
 		'pic pic pic pic pic'
 		'pic2 pic2 main main main'
 }
+

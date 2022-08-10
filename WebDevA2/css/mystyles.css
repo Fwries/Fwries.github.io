@@ -211,3 +211,8 @@ body { /* style for all */
 		'pic pic pic pic pic'
 		'pic2 pic2 main main main'
 }
+
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
