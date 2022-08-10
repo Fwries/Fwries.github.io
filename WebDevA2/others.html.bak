@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title> A2_Faries.Index </title>
+	<title> A2_Faries.Minigame </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/mystyles.css"/>
 	<script src="js/myscript.js"></script> 
 </head>
-<body>
+<body onload="plusSlides(-1)">
+	<div class="topnav" id="myTopnav">
+	  <a href="index.html" class="active">Home</a>
+	  <a href="foraging.html">Foraging</a>
+	  <a href="intelligence.html">Intelligence</a>
+	  <a href="others.html">Minigame</a>
+	  <a href="javascript:void(0);" class="icon" onclick="MenuFunc()"><img src="img/hamburgerMenu.png" alt="Hamburger"></a>
+	</div>
 	<div class="grid-container-Index">
 		<!-- Carousel Img Scroll -->
 		<div class="ItemCarousel"> 
@@ -22,11 +29,11 @@
 				<div class="SlideImg"><a href="others.html"><img class="animated-gif" src="img/CrowBanner.gif" alt="CrowBanner"> </div>
 			</div>
 			
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<a class="prev" onclick="plusSlides(-1)"><</a>
+			<a class="next" onclick="plusSlides(1)">></a>
 		</div>
 		
-		<div class="Header"> <h1> Others! </h1> </div>
+		<div class="Header"> <h1> Minigame! </h1> </div>
 		
 		<div class="ItemPic"><img src="img/CrowImg1.png"</div>
 		
