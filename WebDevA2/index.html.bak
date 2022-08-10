@@ -20,26 +20,32 @@
 		<div class="ItemCarousel"> 
 			<div class="Slide fade"> 
 				<div class="SlideImg"><a href="others.html"><img class="animated-gif" src="img/Minigame.gif" alt="minigamee"> </div>
+				<div class="text">Minigame</div>
 			</div>
 		
 			<div class="Slide fade"> 
 				<div class="SlideImg"><a href="foraging.html"><img class="animated-gif" src="img/Foraging.gif" alt="foragingg"> </div>
+				<div class="text">Foraging</div>
 			</div>
 			
 			<div class="Slide fade"> 
 				<div class="SlideImg"><a href="intelligence.html"><img class="animated-gif" src="img/Intelligence.gif" alt="intelligencee"> </div>
+				<div class="text">Intelligence</div>
 			</div>
 			
 			<a class="prev" onclick="plusSlides(-1)"><</a>
 			<a class="next" onclick="plusSlides(1)">></a>
 		</div>
 		
-		<div class="Header"> <h1> Fun Facts about Corvus! </h1> </div>
+		<div class="ItemHeader"> <h1> Fun Facts about Corvus! </h1> </div>
 		
 		<div class="ItemPic"><iframe src="https://www.youtube.com/embed/7aWL2iEb6y4?modestbranding=1&rel=0&cc_load_policy=1" 
 		width="560" height="315" title="Why Crows Are as Smart as 7 Year Old Humans" frameborder="0" allowfullscreen></iframe></div>
 		
+		<div class="ItemPic2"><img src="img/CrowImg1.png" alt="CrowPic1"></div>
+		
 		<div class="ItemMain">
+			<h1> More About Crows! </h1>
 			<p> Corvus is a widely distributed genus of medium-sized to large birds in the family Corvidae. 
 				It includes species commonly known as crows, ravens and rooks. Medium-large species are 
 				ascribed to the genus, ranging from 34 cm of some small Mexican species to 60–70 cm of the 
@@ -51,6 +57,7 @@
 				with metallic iridescence and others that have white or gray areas on the neck or torso: 
 				Australian species have light eyes, while generally the irises are dark. 
 			</p>
+			<a href="#Top">ToTop</a>
 		</div>
 	</div>
 </body>

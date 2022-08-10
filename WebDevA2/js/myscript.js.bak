@@ -1,12 +1,15 @@
 // Menu Code
-
+function MenuFunc() {
+  var x = document.getElementById("myTopnav");
+  if (x.className == "topnav") { x.className += " responsive"; }
+  else { x.className = "topnav"; }
+}
 // End of Menu Code
 
 // Carousel Code
 let slideIndex = 1; // Start Carousel at slide 1
 showSlides(slideIndex);
-//setInterval(plusSlides(1), 2000); // Change image every 2 seconds
-
+setInterval(plusSlides(1), 2000);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -24,6 +27,8 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none"; // Hide Slide
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(plusSlides(1), 2000);
+  showSlides(n + 1);
 }
 // End of Carousel Code
