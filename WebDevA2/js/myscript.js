@@ -1,5 +1,5 @@
 // Menu Code
-function MenuFunc() {
+function MenuFunc() { // Check if normal size or smaller size
   var x = document.getElementById("myTopnav");
   if (x.className == "topnav") { x.className += " responsive"; }
   else { x.className = "topnav"; }
@@ -14,7 +14,7 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-setInterval(function(){plusSlides(1)}, 3000);
+setInterval(function(){plusSlides(1)}, 3000); // Next slide every 3secs
 
 function currentSlide(n) {
   showSlides(slideIndex = n);

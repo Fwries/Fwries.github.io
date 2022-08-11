@@ -30,7 +30,7 @@ function component(width, height, color, x, y, type) {
         this.image = new Image();
         this.image.src = color;
     }
-    this.width = width;
+	this.width = width;
     this.height = height;
     this.speedX = 0;
     this.speedY = 0;    
