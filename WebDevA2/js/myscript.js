@@ -9,11 +9,12 @@ function MenuFunc() {
 // Carousel Code
 let slideIndex = 1; // Start Carousel at slide 1
 showSlides(slideIndex);
-setInterval(plusSlides(1), 2000);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
+
+setInterval(function(){plusSlides(1)}, 3000);
 
 function currentSlide(n) {
   showSlides(slideIndex = n);

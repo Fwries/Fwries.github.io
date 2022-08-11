@@ -4,7 +4,6 @@
 	<title> A2_Faries.Index </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/mystyles.css"/>
-	<script src="js/myscript.js"></script> 
 </head>
 <body onload="plusSlides(1)">
 	<div class="topnav" id="myTopnav">
@@ -39,10 +38,10 @@
 		
 		<div class="ItemHeader"> <h1> Fun Facts about Corvus! </h1> </div>
 		
-		<div class="ItemPic"><iframe src="https://www.youtube.com/embed/7aWL2iEb6y4?modestbranding=1&rel=0&cc_load_policy=1" 
-		width="560" height="315" title="Why Crows Are as Smart as 7 Year Old Humans" frameborder="0" allowfullscreen></iframe></div>
+		<div class="ItemPic"><iframe src="https://www.youtube-nocookie.com/embed/UcbfEXjbKxA?rel=0&cc_load_policy=1" 
+		width="560" height="315" title="The Murderless Way To Deal With Crows (How Birds Will Take Over the World)" frameborder="0" allowfullscreen></iframe></div>
 		
-		<div class="ItemPic2"><img src="img/CrowImg1.png" alt="CrowPic1"></div>
+		<div class="ItemPic2"><img src="img/CrowImg1.png" alt="CrowPic1" style="float: left"></div>
 		
 		<div class="ItemMain">
 			<h1> More About Crows! </h1>
@@ -60,5 +59,6 @@
 			<a href="#myTopnav">ToTop</a>
 		</div>
 	</div>
+	<script src="js/myscript.js"></script> 
 </body>
 </html>
