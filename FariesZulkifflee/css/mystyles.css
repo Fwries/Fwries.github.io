@@ -1,0 +1,378 @@
+*{ user-select: none; }
+
+html { scroll-behavior: smooth; }
+
+body { /* style for all */
+	max-width: 100%;
+    overflow-x: hidden;
+	background: #111;
+	font: 16px Arial;
+	color: #FFF;
+}
+
+a:link { /* style for links */
+	color: #FF8C00;  /* black */
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #FF8C00;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:active {
+	color: red;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.textminiScreen{  /* mini pop up */
+	position: relative;
+	display: inline-block;	
+	color: #FF8C00;  /* black */
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.miniScreen {  /* mini pop up */
+	position: absolute;
+	visibility: hidden;
+	background: transparent;
+}
+
+.textminiScreen:hover .miniScreen { visibility: visible; }
+
+.card0 { grid-area: card0; width: 205px; height: 300px; position: relative;}
+.card1 { grid-area: card1; position: relative;}
+.card2 { grid-area: card2; position: relative;}
+.card3 { grid-area: card3; position: relative;}
+.card4 { grid-area: card4; position: relative;}
+.card5 { grid-area: card5; position: relative;}
+
+.card-container {  /* grid for flipping cards */
+	display: grid;
+	grid-template-areas:
+		'card1 card2 card3 card4 card5';
+}
+
+.expansive-text {grid-area: extext; width: 127px; height: 300px;}  /* $200 text */
+
+.excontainer {  /* $200 container */
+	display: grid;
+	grid-template-areas: 'card0 extext';
+}
+
+.price{ visibility: hidden; }  /* hide $200 text */
+
+.excontainer:hover .price{ visibility: visible; }  /* show $200 text */
+
+.flip-card { perspective: 1000px; }
+
+.flip-card-inner {  /* inbetween faces */
+	position: relative;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner { transform: rotateY(180deg); }  /* flip card */
+
+.flip-card-front, .flip-card-back { position: absolute; backface-visibility: hidden; }  /* hide card back */
+
+.flip-card-front {}
+
+.flip-card-back { transform: rotateY(180deg); }  /* flip card back */
+
+.LeftNav {  /* Navigation */
+	height: 100%;
+	width: 100px;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	color: #FFF;
+	background-color: #333;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.MenuName {}
+
+.Intro-LeftNav {
+	height: 100px;
+	width: 100px;
+}
+
+.Hobbies-LeftNav {
+	height: 100px;
+	width: 100px;
+}
+
+.Education-LeftNav {
+	height: 100px;
+	width: 100px;
+}
+
+.Others-LeftNav {
+	height: 100px;
+	width: 100px;
+}
+
+.Empty-LeftNav{
+	height: 100px;
+	width: 100px;
+}
+
+.buttonToTop {
+	height: 100px;
+	width: 100px;
+}
+
+.IntroImg {
+	position: relative;
+	left: -100px;
+	transition: 0.2s ease-in-out;
+}
+
+.HobbiesImg {
+	position: relative;
+	left: -100px;
+	transition: 0.2s ease-in-out;
+}
+
+.EducationImg {
+	position: relative;
+	left: -100px;
+	transition: 0.2s ease-in-out;
+}
+
+.OthersImg {
+	position: relative;
+	left: -100px;
+	transition: 0.2s ease-in-out;
+}
+
+.ToTopImg {
+	position: relative;
+	left: -100px;
+	transition: 0.2s ease-in-out;
+}
+
+.Intro-LeftNav:hover .IntroImg { transform: translateX(100px); }
+.Hobbies-LeftNav:hover .HobbiesImg { transform: translateX(100px); }
+.Education-LeftNav:hover .EducationImg { transform: translateX(100px); }
+.Others-LeftNav:hover .OthersImg { transform: translateX(100px); }
+.buttonToTop:hover .ToTopImg { transform: translateX(100px); }
+
+.TextCenterImg {  /* put text in center */
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	font: 16px Arial;
+	font-weight: bold;
+	color: #FFF;
+}
+
+.Header {  /* Space for header at top of site page */
+	height: 100%;
+	width: 100px;
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 100px;
+}
+
+.ItemHeader { 
+	grid-area: header; 
+	height: 778px;
+}
+
+.Orange{  /* Just Orange background */
+	background-color: #FF8C00;
+	width: 1440px;
+	height: 778px;
+}
+
+.HeaderText {  /* Introduction text on each menu */
+	position: relative;
+	top: 50%;
+	left: 25%;
+	transform: translate(-55%, -100%);
+	font: 16px Arial;
+	font-weight: bold;
+	color: #FFF;
+}
+
+.ItemPic { 
+	grid-area: pic;
+	background-color: #333;
+}
+
+.ItemPic1 { 
+	grid-area: pic1;
+	background-color: #333;
+}
+
+.ItemPic2 { 
+	grid-area: pic2;
+	background-color: #333;
+}
+
+.ItemPic3 { 
+	grid-area: pic3;
+	background-color: #333;
+}
+
+.ItemPic4 { 
+	grid-area: pic4;
+	background-color: #333;
+}
+
+.ItemPicSchool { 
+	grid-area: ItemPicSchool; 
+	background-color: #333;
+	width: 337px;
+}
+
+.ItemPicSchool1 { 
+	grid-area: ItemPicSchool1; 
+	background-color: #333;
+	width: 276px;
+}
+
+.ItemMain { 
+	grid-area: main; 
+	background-color: #333;
+}
+
+.ItemMain1 { 
+	grid-area: main1; 
+	background-color: #333;
+}
+
+.ItemRight { 
+	grid-area: right;
+	background-color: #333;
+}
+
+.ItemFooter { 
+	grid-area: footer; 
+	background-color: #333;
+}
+
+.ItemAir {  /* space for navigation bar */
+	grid-area: air;
+	width: 80px;
+}
+
+.ItemSoccerCat {  /* grid for cat kick soccer ball anim */
+	display: flex;
+	flex-flow: row wrap;
+	height: 270px;
+	width: 1043px;
+}
+
+.BallImg{
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+
+.CatImg{ 
+	position: relative;
+	top: 50px;
+}
+
+.ItemSoccerCat:hover .BallImg{
+	animation-name: BallAnim;
+	animation-duration: 4s;
+}
+
+.ItemSoccerCat:hover .CatImg{
+	animation-name: CatAnim;
+	animation-duration: 4s;
+}
+
+@keyframes CatAnim {
+  0%   {left:0px; transform: rotate(0deg); top:50px; }
+  25%  {left:0px; transform: rotate(0deg); top:50px; }
+  50%  {left:0px; transform: rotate(0deg); top:50px; }
+  75%  {left:0px; transform: rotate(-3600deg); top:50px; }
+  100% {left:0px; transform: rotate(-3600deg); top:50px; }
+}
+
+@keyframes BallAnim {
+  0%   { left:0px; transform: rotate(0deg); top:0px; }
+  25%  { left:0px; transform: rotate(0deg); top:150px; }
+  50%  { left:0px; transform: rotate(0deg); top:150px; }
+  70%  { left:0px; transform: rotate(0deg); top:150px; }
+  100% { left:1000px; transform: rotate(3600deg); top:50px; }
+}
+
+ /* Grid-Area */
+
+.grid-container-Intro {
+	display: grid;
+	grid-template-areas:
+		'air header header header header header'
+		'air pic main main right right'
+		'air pic footer footer footer footer';
+}
+
+.grid-container-Intro > div {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.grid-container-Hobbies {
+	display: grid;
+	grid-template-areas:
+		'air header header header header'
+		'air pic main main main'
+		'air main1 main1 main1 pic1'
+		'air footer footer footer footer';
+}
+
+.grid-container-Hobbies > div {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.grid-container-Education {
+	display: grid;
+	grid-template-areas:
+		'air header header header header'
+		'air ItemPicSchool main main main'
+		'air main1 main1 main1 ItemPicSchool1'
+		'air footer footer footer footer';
+}
+
+.grid-container-Education > div {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.grid-container-Others {
+	display: grid;
+	grid-template-areas:
+		'air header header header header'
+		'air pic main main main'
+		'air pic1 pic2 pic3 pic4'
+}
+
+.grid-container-Others > div {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
