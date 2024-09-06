@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> A2_Faries.Minigame </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/mystyles.css"/>
+</head>
+<body onload="startGame()">
+<div class="topnav" id="myTopnav"> <!-- NavBar --!>
+	  <a href="index.html">Home</a>
+	  <a href="foraging.html">Foraging</a>
+	  <a href="intelligence.html">Intelligence</a>
+	  <a href="others.html" class="active">Minigame</a>
+	  <a href="javascript:void(0);" class="icon" onclick="MenuFunc()"><img src="img/hamburgerMenu.png" alt="Hamburger"></a>
+</div>
+<div class="Minigame"> <!-- Buttonss to move around --!>
+	<button onmousedown="move('up')" onmouseup="clearmove()" ontouchstart="move('up')"><br>UP<br><br></button><br><br>
+	<button onmousedown="move('left')" onmouseup="clearmove()" ontouchstart="move('left')"><br>LEFT<br><br></button>
+	<button onmousedown="move('right')" onmouseup="clearmove()" ontouchstart="move('right')"><br>RIGHT<br><br></button><br><br>
+	<button onmousedown="move('down')" onmouseup="clearmove()" ontouchstart="move('down')"><br>DOWN<br><br></button>
+</div>
+<script src="js/minigame.js"></script> 
+</body>
+</html>
